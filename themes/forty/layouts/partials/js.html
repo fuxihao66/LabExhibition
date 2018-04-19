@@ -1,0 +1,36 @@
+{{ "<!-- Scripts -->" | safeHTML}}
+    {{ "<!-- jQuery -->" | safeHTML }}
+    <script src="{{ "js/jquery.min.js"| absURL }}"></script>
+    
+    
+    <script src="{{ "js/skel.min.js"| absURL }}"></script>
+    
+
+    <script src="{{ "fancybox/jquery.fancybox.pack.js" | absURL }}"></script>
+    <script src="{{"js/jquery.js" | absURL}}"></script>
+    <script src="{{"js/jquery-migrate.min.js" | absURL}}"></script>
+    <script src="{{"js/functions.min.js" | absURL}}"></script>
+    <script src="{{"js/jquery.cycle.all.min.js" | absURL}}"></script>
+    <script src="{{"js/script.js" | absURL}}"></script>
+    <script type='text/javascript'>
+        var travelify_slider_value = {"transition_effect":"fade","transition_delay":"4000","transition_duration":"1000"};
+    </script>
+    <script src="{{"js/slider-settings.min.js" | absURL}}"></script>
+
+
+
+
+
+    <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+
+    {{ "<!-- Main JS -->" | safeHTML }}
+    <script src="{{ "js/jquery.scrolly.min.js"| absURL }}"></script>
+    <script src="{{ "js/jquery.scrollex.min.js"| absURL }}"></script>
+    <script src="{{ "js/util.js"| absURL }}"></script>
+    <script src="{{ "js/main.js"| absURL }}"></script>
+
+    {{ template "_internal/google_analytics_async.html" . }}
+
+    {{ range .Site.Params.custom_js }}
+        <script src="{{ . | absURL }}"></script>
+    {{ end }}
