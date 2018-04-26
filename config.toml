@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "xx实验室"
+title = "北航 数学、信息与行为教育部重点实验室"
 theme = "forty"
 
 
@@ -30,7 +30,7 @@ disqusShortname = ""
 
   # Just a custom image variable, please define it in .md files for content.
   image = ""
-
+  
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
@@ -38,7 +38,7 @@ disqusShortname = ""
 
   # Navigation Section
   [params.navigation]
-    title = "xx实验室"
+    title = "数学信息与行为教育部重点实验室"
     # subtitle = "By HTML5 Up"
     menu = "导航"
     # Optional logo as brand stored in img/
@@ -80,6 +80,8 @@ disqusShortname = ""
   [params.slider]
     enable = true
     num_features = 6
+  [params.summaryLength]
+    summarylength = 30
 
   # Banner section
   # [params.banner]
@@ -99,31 +101,31 @@ disqusShortname = ""
       title = "项目成果"
       # subtitle = "Ipsum Dolor Sit Amet"
       image = "pic01.jpg"
-      url = "blogs"
+      url = "projs"
 
     [[params.tiles.showcase]]
       title = "团队介绍"
       # subtitle = "Feugiat Amet Tempus"
       image = "pic02.jpg"
-      url = "blogs"
+      url = "team_intro"
 
     [[params.tiles.showcase]]
       title = "在研项目"
       # subtitle = "Lorem Etiam Nullam"
       image = "pic03.jpg"
-      url = "blogs"
+      url = "projs"
 
     [[params.tiles.showcase]]
       title = "研究方向"
       # subtitle = "Nisl Sed Aliquam"
-      image = "pic04.jpg"
-      url = "blogs"
+      image = "city.png"
+      url = "res"
 
-    [[params.tiles.showcase]]
-      title = "合作单位"
-      # subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic05.jpg"
-      url = "blogs"
+    # [[params.tiles.showcase]]
+    #   title = "合作单位"
+    #   # subtitle = "Ipsum Dolor Sit Amet"
+    #   image = "pic05.jpg"
+    #   url = "blogs"
 
     # [[params.tiles.showcase]]
     #   title = "Etiam"
@@ -191,13 +193,13 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "xx实验室"
+    copyright = "北航 数学、信息与行为教育部重点实验室"
 
     # Uses font awesome icons
-    [[params.footer.social]]
-      icon = "fa-github"
-      url= "https://www.github.com"
-      label = "GitHub"
+    # [[params.footer.social]]
+    #   icon = "fa-github"
+    #   url= "https://www.github.com"
+    #   label = "GitHub"
 
     # [[params.footer.social]]
     #   icon = "fa-linkedin"
